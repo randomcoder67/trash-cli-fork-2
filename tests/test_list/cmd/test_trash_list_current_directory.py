@@ -9,10 +9,6 @@ from tests.support.asserts import assert_equals_with_unidiff
 import pytest
 
 class TestTrashListCurrentDirectory:
-    def setUp(self):
-        super(type(self), self).setUp()
-        self.user.set_fake_cwd("/home/user/currentdir")
-    
     @pytest.fixture
     def user(self, trash_list_user):
         u = trash_list_user
